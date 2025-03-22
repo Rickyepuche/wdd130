@@ -1,15 +1,22 @@
 /* Global styles */
+:root {
+    --primary-color: #0077B6;
+    --secondary-color: #00B4D8;
+    --accent1-color: #90E0EF;
+    --accent2-color: #CAF0F8;
+}
+
 body{
     font-family: "Roboto", sans-serif;
     font-size: large;
     margin: 0;
     padding: 0;
-    background-color: #CAF0F8;
+    background-color: var(--accent2-color);
 }
 
 /* Header */
 header{
-    background-color: #0077B6;
+    background-color: var(--primary-color);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -91,7 +98,7 @@ nav a {
 }
 
 .history {
-    background-color: #00B4D8;
+    background-color: var(--secondary-color);
     color: white;
 }
 
@@ -101,7 +108,7 @@ nav a {
 }
 
 .adventure {
-    background-color: #90E0EF;
+    background-color: var(--accent1-color);
     color: white;
 }
 
@@ -127,7 +134,7 @@ nav a {
 
 /* Footer */
 footer {
-    background-color: #0077B6;
+    background-color: var(--primary-color);
     color: white;
     text-align: center;
     padding: 20px;
