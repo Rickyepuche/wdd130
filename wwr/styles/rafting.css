@@ -40,8 +40,6 @@ nav a {
 /* Hero section */
 .hero {
     position: relative;
-    text-align: center
-    color white;
     height: 510px;
 }
 
@@ -118,7 +116,7 @@ nav a {
 
 .gallery p {
     font-size: larger;
-    
+
 }
 .gallery img {
     width: 100%;
