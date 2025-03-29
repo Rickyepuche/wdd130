@@ -17,14 +17,15 @@ body{
 /* Header */
 header{
     background-color: var(--primary-color);
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
     align-items: center;
-    padding: 30px 20px;
+    
 }
 
 header img {
-    height: 20%;
+    height: 100%;
     width: auto
 }
 
@@ -37,7 +38,7 @@ nav a{
     text-decoration: none;
     color: white;
     font-weight: bold;
-    font-size: 16px;
+    font-size: 25px;
 }
 
 nav a {
@@ -92,8 +93,15 @@ nav a {
 }
 
 /* sections */
-.history {
+.history h2 {
     text-align: center;
+    padding: 0;
+    margin: 2px;
+
+}
+
+.history {
+    text-align: left;
     padding: 40px 20px;
 }
 
@@ -102,9 +110,15 @@ nav a {
     color: white;
 }
 
+.history-container {
+    display: flex;
+    gap: 20px;
+    justify-content: space-around;
+}
+
 .adventure {
     text-align: center;
-    padding: 40px 20px;
+    padding: 10px 20px 10px 10px;
 }
 
 .adventure {
@@ -115,22 +129,20 @@ nav a {
 /* gallery */
 .gallery {
     display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
     gap: 10px;
-    padding: 20px;
+    justify-content: center;
+    flex-flow: wrap;
 }
 
-.gallery p {
-    font-size: larger;
 
+figure img {
+    margin: 0;
+    padding: 0;
+    max-width: 150px;
+    height: 150px;
+    
 }
-.gallery img {
-    width: 100%;
-    height: auto;
-    border-radius: 5px;
-    object-fit: cover;
-}
+
 
 /* Footer */
 footer {
@@ -144,6 +156,8 @@ footer nav {
     margin-top: 10px;
 }
 .social-media-links {
+    display: flex;
+    justify-content: flex-end;
     height: 30px;
     margin: 0 10px;
 }
