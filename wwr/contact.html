@@ -36,30 +36,31 @@
             <div class="feedback">
                 <h2>Send Us A Message</h2>
                 <form action="/submit" method="POST">
-        
-                        <lengend>Contact Information</lengend><br>
+                    <fieldset>
+                        <legend>Contact Information</legend><br>
                         <label for="fullname">Full Name:</label><br>
                         <input type="text" id="fullname" name="fullname"><br>
                         <label for="useremail">Email:</label><br>
                         <input type="email" id="useremail" name="useremail">
-            
-                        <lengend>Purpose of Inquiry</lengend><br>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Purpose of Inquiry</legend><br>
                         <input type="radio" id="general-inquiry" name="purpose" value="General Inquiry">
                         <label for="general-inquiry">General Inquiry</label><br>
                         <input type="radio" id="reservation-question" name="purpose" value="reservation question">
                         <label for="general-inquiry">Reservation Question</label><br>
                         <input type="radio" id="website-suggestion" name="purpose" value="Website Suggestion">
                         <label for="general-inquiry">Website Suggestion</label><br>
-                
-                    
-                        <lengend>Message</lengend><br>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Message</legend><br>
                         <textarea rows="5" cols="50"
                         placeholder="Enter text"></textarea>
-                    
-                    
+                    </fieldset>
+                    <fieldset>
                         <input type="checkbox" id="subscribe" name="subscribe" value="subscribe">
                         <label for="subscribe">Please subscribe me to the monthly newsletter</label><br>
-                    
+                    </fieldset>
                     <button type="submit">Click Me</button>
                 </form>
             </div> 
