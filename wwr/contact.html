@@ -36,14 +36,13 @@
             <div class="feedback">
                 <h2>Send Us A Message</h2>
                 <form action="/submit" method="POST">
-                    <fieldset>
+        
                         <lengend>Contact Information</lengend><br>
                         <label for="fullname">Full Name:</label><br>
                         <input type="text" id="fullname" name="fullname"><br>
                         <label for="useremail">Email:</label><br>
                         <input type="email" id="useremail" name="useremail">
-                    </fieldset>
-                    <fieldset>
+            
                         <lengend>Purpose of Inquiry</lengend><br>
                         <input type="radio" id="general-inquiry" name="purpose" value="General Inquiry">
                         <label for="general-inquiry">General Inquiry</label><br>
@@ -51,16 +50,16 @@
                         <label for="general-inquiry">Reservation Question</label><br>
                         <input type="radio" id="website-suggestion" name="purpose" value="Website Suggestion">
                         <label for="general-inquiry">Website Suggestion</label><br>
-                    </fieldset>
-                    <fieldset>
+                
+                    
                         <lengend>Message</lengend><br>
                         <textarea rows="5" cols="50"
                         placeholder="Enter text"></textarea>
-                    </fieldset>
-                    <fieldset>
+                    
+                    
                         <input type="checkbox" id="subscribe" name="subscribe" value="subscribe">
                         <label for="subscribe">Please subscribe me to the monthly newsletter</label><br>
-                    </fieldset>
+                    
                     <button type="submit">Click Me</button>
                 </form>
             </div> 

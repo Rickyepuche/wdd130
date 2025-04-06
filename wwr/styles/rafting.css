@@ -154,17 +154,18 @@ nav a {
 form {
     width: 450px;
     justify-content: right;
+    column-gap: 0.5rem;
     margin: 0 auto;
     padding: 1rem;
     border: 1px #90e1efcb;
     border-radius: 5px;
-    background-color: white;
+    background-color:#90e1efcb;
     display: grid;
 }
 
 fieldset {
     display: grid;
-    column-gap: 0.5rem;
+    
     margin: 5px;
     padding: 5px;
 }
