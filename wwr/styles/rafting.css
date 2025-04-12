@@ -226,7 +226,7 @@ nav a {
     grid-area: reasons;
 }
 
-
+/* contact us page */
 
 .hero2 h1 {
     box-sizing: border-box;
@@ -300,6 +300,7 @@ form {
     width: 450px;
     justify-content: right;
     margin-left: 20px;
+    margin-bottom: 30px;
     padding: 1rem;
     border: 5px grey;
     border-radius: 20px;
