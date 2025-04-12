@@ -18,6 +18,7 @@ body{
     margin: 0;
     padding: 0;
     background-color: var(--accent2-color);
+    overflow-x: hidden;
 }
 
 /* Header */
@@ -27,6 +28,9 @@ header{
     grid-template-columns: 1fr 1fr;
     justify-content: center;
     align-items: center;
+    padding: 10px;
+    width: 100%;
+    max-width: 100vw;
     
 }
 
@@ -75,6 +79,7 @@ nav a {
     border-radius: 10px;
     max-width: 100%;
     margin: auto;
+    word-wrap: break-word;
 }
 
 .hero article {
@@ -84,13 +89,14 @@ nav a {
     padding: 20px;
     border-radius: 10px;
     max-width: 1200px;
-    height: 200px;
+    height: auto;
     margin: auto;
 }
 
 .hero article img {
     position: relative;
-    width: 200px;
+    width: 30vh;
+    height: 28vh;
     max-width: 100%;
     border: 1px solid black;
     padding: 2px;
@@ -102,9 +108,125 @@ nav a {
     background-image: url('../images/hero-image2.jpg');
     background-size: cover;
     background-position: center;
+    position: relative;
     height: 100vh;
     padding: 40px;
 }
+
+.welcome {
+    background-image: url('../images/hero-image2.jpg');
+    background-size: cover;
+    box-sizing: border-box;
+    border-radius: 15px;
+    height: 100%;
+    width: 100%;
+    padding: 40px;
+    font-size: x-large;
+    font-weight: bold;
+    
+}
+
+.welcome h2 {
+    color: #0077B6;
+}
+
+.hero3 {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+.hero3 h1, h2 {
+    position: relative;
+    box-sizing: border-box;
+    border-radius: 25px;
+    text-align: center;
+    color: #0077B6;
+    padding: 20px;
+}
+
+.hero3 nav {
+    position: relative;
+    justify-content: center;
+    box-sizing: border-box;
+    background: #00B4D8;
+    border-radius: 30px;
+    padding: 10px;
+    margin: 0 auto;
+    width: 20%;
+    max-width: 100%;
+}
+
+.hero3 {
+    display: grid;
+    position: relative;
+    grid-template-areas: "welcome" "planner" "steps" "reasons";
+    gap: 30px;
+    padding: 30px 20px;
+}
+
+.planner, .steps, .reasons {
+    background: #00B4D8;
+    max-width: 100%;
+    padding: 35px;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    font-size: 1.5rem ;
+    font-weight: bolder;
+}
+
+.planner h3, .steps h3, .reasons h3 {
+    margin-bottom: 15px;
+    color: white;
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+
+.welcome {
+    grid-area: welcome;
+}
+
+.steps ol {
+    padding-left: 20px;
+    display: flex;
+    flex: 1;
+    justify-content: space-around;
+    color: white;
+}
+
+.steps li {
+    margin-bottom: 10px;
+}
+
+.reasons ul {
+    list-style-type: square;
+    padding: 30px;
+    display: flex;
+    flex: 1;
+    justify-content: space-around;
+    color: white;
+}
+
+.reasons li {
+    padding: 30px;
+}
+
+.planner {
+    grid-area: planner;
+    text-align: center;
+    color: white;
+}
+
+.steps {
+    grid-area: steps;
+}
+
+.reasons {
+    grid-area: reasons;
+}
+
+
 
 .hero2 h1 {
     box-sizing: border-box;
@@ -165,7 +287,7 @@ nav a {
     padding: 30px;
     display: flex;
     flex-flow: column wrap;
-    flex: 1 100px;
+    flex: 1;
     justify-content: center;
     gap: 100px;
     text-align: center;
@@ -177,11 +299,12 @@ nav a {
 form {
     width: 450px;
     justify-content: right;
-    margin: 0 auto;
+    margin-left: 20px;
     padding: 1rem;
-    border: 1px #90e1efcb;
-    border-radius: 5px;
-    background-color:#90e1efcb;
+    border: 5px grey;
+    border-radius: 20px;
+    box-shadow: 0 0 30px grey;
+    background-color:white;
     display: grid;
 }
 
@@ -190,6 +313,9 @@ fieldset {
     column-gap: 0.5rem;
     margin: 5px;
     padding: 5px;
+    border-radius: 20px;
+    font-size: 17px;
+    font-weight: bolder;
 }
 
 legend {
@@ -211,6 +337,7 @@ label {
 input, select, textarea {
     padding: 5px;
     font-size: 15px;
+    border-radius: 15px;
 }
 
 input[type="checkbox"] {
@@ -300,6 +427,79 @@ figure img {
     height: 150px;
     
 }
+
+/* Trips */
+.past-trips {
+    max-width: 85%;
+    align-items: center;
+    display: grid;
+    margin-left: 7%;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, auto);
+    gap: 2rem;
+}
+
+.trip1, .trip2, .trip3, .trip4 {
+    background-color: #00B4D8;
+    border-radius: 15px;
+    overflow: hiden;
+    box-shadow: #ddd;
+    text-align: center;
+}
+
+.past-trips img {
+    box-sizing: border-box;
+    border-radius: 15px;
+    width: 100%;
+    height: 50vh;
+    object-fit: cover;
+    display: block;
+}
+
+.upcoming h1, .past-trips h1 {
+    color: #00B4D8;
+}
+
+.hero4 h1, h2 {
+    color: #00B4D8;
+    text-align: center;
+    padding: 20px;
+}
+
+.past-trips p {
+    margin: 0.5rem;
+    font-weight: bold;
+    color: white;
+
+}
+
+.upcoming {
+    height: 70vh;
+    margin-left: 15%;
+    margin-right: 15%;
+    padding: 30px;
+    text-align: center;
+    position: relative;
+}
+
+.upcoming img {
+    height: 100%;
+    width: auto;
+    object-fit: cover;
+}
+
+.upcoming nav {
+    position: relative;
+    justify-content: center;
+    box-sizing: border-box;
+    background: #00B4D8;
+    border-radius: 30px;
+    padding: 10px;
+    margin: 0 auto;
+    width: 30%;
+    max-width: 100%;
+}
+
 
 
 /* Footer */
