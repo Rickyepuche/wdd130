@@ -442,8 +442,7 @@ figure img {
 .trip1, .trip2, .trip3, .trip4 {
     background-color: #00B4D8;
     border-radius: 15px;
-    overflow: hiden;
-    box-shadow: #ddd;
+    overflow: hidden;
     text-align: center;
 }
 
