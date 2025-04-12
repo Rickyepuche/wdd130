@@ -145,7 +145,7 @@ nav a{
     position: relative;
     justify-content: center;
     box-sizing: border-box;
-    background: #00B4D8;
+    background: #003049;
     border-radius: 30px;
     padding: 10px;
     margin: 0 auto;
@@ -189,7 +189,7 @@ nav a{
     display: flex;
     flex: 1;
     justify-content: space-around;
-    color: white;
+    color: #003049;
 }
 
 .steps li {
@@ -212,7 +212,7 @@ nav a{
 .planner {
     grid-area: planner;
     text-align: center;
-    color: white;
+    color: #003049;
 }
 
 .steps {
@@ -376,22 +376,21 @@ button:hover {
 }
 
 /* sections */
-.history h2 {
+.history h2, .adventure h2 {
     text-align: center;
     padding: 0;
     margin: 2px;
-
-}
-
-.history {
-    text-align: left;
-    padding: 40px 20px;
+    color: #000000;
 }
 
 .history {
     background-color: var(--secondary-color);
-    color: white;
+    color: #000000;
+    text-align: left;
+    padding: 40px 20px;
+    font-weight: bold;
 }
+
 
 .history-container {
     display: flex;
@@ -402,12 +401,11 @@ button:hover {
 .adventure {
     text-align: center;
     padding: 10px 20px 10px 10px;
+    background-color: var(--accent1-color);
+    color: #000000;
+    font-weight: bolder;
 }
 
-.adventure {
-    background-color: var(--accent1-color);
-    color: white;
-}
 
 /* gallery */
 .gallery {
@@ -454,11 +452,11 @@ figure img {
 }
 
 .upcoming h1, .past-trips h1 {
-    color: #00B4D8;
+    color: #000000;
 }
 
 .hero4 h1, h2 {
-    color: #00B4D8;
+    color: #000000;
     text-align: center;
     padding: 20px;
 }
@@ -466,7 +464,7 @@ figure img {
 .past-trips p {
     margin: 0.5rem;
     font-weight: bold;
-    color: #003049;
+    color: #000000;
 
 }
 
@@ -495,6 +493,10 @@ figure img {
     margin: 0 auto;
     width: 30%;
     max-width: 100%;
+}
+
+.upcoming nav a {
+    color: #000000;
 }
 
 
